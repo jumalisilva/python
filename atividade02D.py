@@ -5,16 +5,19 @@ print('Bem-vindo ao jogo da Pedra, Papel e Tesoura!')
 jogador1 = input('Jogador 1, escolha entre pedra, papel ou tesoura: ')
 jogador2 = input('Jogador 2, escolha entre pedra, papel ou tesoura: ')
 
+# Pedra e tesoura
 if (jogador1 == 'pedra' and jogador2 == 'tesoura'):
     print('Jogaodr 1 venceu!')
 elif (jogador2 == 'pedra' and jogador1 == 'tesoura'):
     print('Jogador 2 venceu!')
-
+    
+# Tesoura e papel
 elif (jogador1 == 'tesoura' and jogador2 == 'papel'):
     print('Jpgador 1 venceu!')
 elif (jogador2 == 'tesoura' and jogador1 == 'papel'):
     print('Jpgador 2 venceu!')
-    
+
+# Papel e pedra
 elif (jogador1 == 'papel' and jogador2 == 'pedra'):
     print('Jogador 1 venceu!')
 elif (jogador2 == 'papel' and jogador1 == 'pedra'):
