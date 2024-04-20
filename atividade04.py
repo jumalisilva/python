@@ -13,7 +13,7 @@ if (mes == 2 and dia < 28):
 elif (mes == 2 and dia > 28):
     print('O mês {} possui apenas 28 dias. Tente novamente.' . format(mes))
 elif (mes == 2 and dia == 28):
-    dia -= 27
+    dia = 1
     mes += 1
     print('A data seguinte é: {}/{}/{}.' . format(dia, mes, ano))
 
@@ -24,7 +24,7 @@ elif (mes == 4 or mes == 6 or mes == 9 or mes == 11) and dia < 30:
 elif (mes == 4 or mes == 6 or mes == 9 or mes == 11) and dia > 30:
     print('O mês {} possui apenas 30 dias. Tente novamente.' . format(mes))
 elif (mes == 4 or mes == 6 or mes == 9 or mes == 11) and dia == 30:
-    dia -= 29
+    dia = 1
     mes += 1
     print('A data seguinte é: {}/{}/{}.' . format(dia, mes, ano))
 
@@ -35,7 +35,7 @@ elif (mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10) and
 elif (mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10) and dia > 31:
     print('O mês {} possui apenas 31 dias. Tente novamente.' . format(mes))
 elif (mes == 1 or mes == 3 or mes == 5 or mes == 7 or mes == 8 or mes == 10) and dia == 31:
-    dia -= 30
+    dia = 1
     mes += 1
     print('A data seguinte é: {}/{}/{}.' . format(dia, mes, ano))
 
@@ -46,7 +46,7 @@ elif (mes == 12) and dia < 31:
 elif (mes == 12) and dia > 31:
     print('O mês {} possui apenas 31 dias. Tente novamente.' . format(mes))
 elif (mes == 12) and dia == 31:
-    dia -= 30
-    mes -= 11
+    dia = 1
+    mes = 1
     ano += 1
     print('A data seguinte é: {}/{}/{}.' . format(dia, mes, ano))
